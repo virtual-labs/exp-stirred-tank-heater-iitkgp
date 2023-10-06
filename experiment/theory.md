@@ -1,65 +1,110 @@
 ## Introduction
 
-**About the Experiment**
-
-
-This experiment enables a student to learn
-
--How to view the real life analog signal with an oscilloscope.
--How to set the amplitude, frequency and phase of the signal source.
--How to set the sampling frequency of the source such that the signal is exactly reconstructed from its samples.
-The principal objective of this experiment is to understand the principle of sampling of continuous time analog signal.
 
 
 ## Theory
+<div class="content" id="experiment-article-section-1-content">
+                            <p style="text-align:left; font-size:18px; font-weight:bold;">Heat</p>
+                            <p style="padding-bottom: 10px;">Heat can be defined as the transfer of energy across the boundary of a system due to a temperature difference between the system and its surroundings. Heat should not be confused with internal energy which is essentially all the energy of a system that is associated with its atoms and molecules - when viewed from a reference frame at rest with respect to the object. It's important to understand the fact that internal energy can undergo a change even when there is no transfer of heat. Consider an adiabatic vessel with a movable lid-pulling the lid, in such a manner that the volume of vessel expands, results in cooling and consequent decrease of internal energy even though there was no transfer of heat from surroundings.</p>
+                            <p style="text-align:left; font-size:16px; font-weight:bold;">1. Modes of Heat Transfer</p>
+                            <p style="padding-bottom: 10px;">Transfer of heat can take place through three different mechanisms</p>
 
-                        
-The real life signals that we encounter in our day to day basis are mostly analog signals. These signals are defined continuously in time and have infinite range of amplitude values. In order to process these signals to obtain meaningful information, they need to be converted to a format which is easily handled by computing resources like microprocessors, computers etc... The first step in this process is to convert the real-time signal into discrete-time signals. Discrete-time signals are defined only at a particular set of time instances. They can thus be represented as sequence of numbers with continuous range of values.
+                            <p style="text-align:left; font-size:14px; font-weight:bold;">1.1 Conduction</p>
+                            <p style="padding-bottom: 10px;">Conduction can be understood as a process in which energy transfer occurs from a more energetic body to a less energetic process primarily due to collisions between them. Conduction takes only when there is a temperature difference between two parts of the conducting medium. Let's explore the dependence of the conduction rate with change in temperature. Consider a thin plate of thickness `Delta x` and cross sectional area A. Let the temperature of thickness at one face be and at the opposite face be . It has been experimentally found that heat flow will take place between the two faces. If the time interval is `Delta T` and the heat flow `Delta Q`, then it has been found that `(Delta Q)/(Delta T)=k(Delta T)/(Delta x)`</p>
+                            <p style="text-align:left; font-size:14px; font-weight:bold;">1.2 Convection</p>
+                            <p style="padding-bottom: 10px;">Unlike conduction, convection involves bulk transport of fluids from one place to another which consequently results in exchange of heat from the hotter to colder substance. In brief, the heat energy transferred due to movement of a heated substance is convection. Land and sea breezes are a good example of the phenomenon of convection. During the night, the land cools faster due to poor conductivity of land. This leads to differential heating of the air above land and water. The air above seas is hotter. Since hot air is lighter, it rises up resulting in cool breezes from the land blowing in above seas and the hot air being transported to land resulting in warm night breezes. The reverse process is repeated during the day. This entire phenomenon is based on convection currents and is an example of natural convection. Natural convection is essentially due to the difference in the densities of the fluids which results in their subsequent motion. When fluids are made to move due to some external forces such as a fan or a blower as the case maybe, then it's called forced convection. </p>
+                            <p style="text-align: center;">
+                                <img src="images/convection.jpg">
+                            <h4 style="text-align:center;">Figure 1.1 Convection Currents</h4>
+                            </p>
+                            <p style="text-align:left; font-size:14px; font-weight:bold;">1.3 Radiation</p>
+                            <p style="padding-bottom: 10px;">Radiation heat exchange between two bodies at different temperatures always results in a net transfer of heat energy from the body at a higher temperature to the other at a lower temperature.Heat transfer by radiation is important role in many heating and cooling operation and equipment such as operation of a furnace ,thermal cracking, various types of kilns etc.Radiation heat loss from a process equipment becomes significant when its temperature is considerably different from that of the ambient. Therefore process of radiation is necessary for thermal calculation in a varity of physical situation. Thermal radiation is the emission of electromagnetic waves from all matter that has a temperature greater than absolute zero.Thermal radiation incident on a body tends to increase its temperature .Its depending upon the nature of the material constituting the body and its surface characteristics ,the incident radiation may be absorbed,reflected, or transmitted, partly or fully.</p>
 
-The process of converting an analog signal (denoted as x(t)) to a digital signal (denoted as x(n)) is called the analog-to-digital conversion (referred to as digitization), usually performed by an analog-to-digital converter (ADC). Here t is the continuous time variable and n is the sequence order. In many applications after the processing of the digital signal is performed, x(n) needs to be converted back to analog signal x(t) before it is applied to appropriate analog device. This reverse process is called digital-to-analog conversion and is typically performed using a digital-to-analog converter (DAC).
+                            <p style="text-align:left; font-size:16px; font-weight:bold;">2. Introduction</p>
+                            <p style="padding-bottom: 10px;">Mixing Vessels play an essential role in chemical processes. Its utilities are varied and range from mixing chemicals to changing temperatures of fluids. In the study of stirred tank heaters, we will use it primarily as an instrument for varying the temperature of fluid present in the tank. We generally use a heating coil or jacket filled with a hot fluid surrounding the tank. Here, we will be using the coil to heat the tank. For simplicity, we will have the same phase for both the tank fluid and the coil fluid. We also assume that no change of phase takes place in either of the fluids i.e. the ones in the tank and in the surrounding coil. For studying our setup in detail, it's important to get acquainted with the following terms.</p>
+                            <p style="text-align:left; font-size:14px; font-weight:bold;">2.1 Material and Energy Balance</p>
+                            <p style="padding-bottom: 10px;">Chemical Processes usually require flow of substances. As the materials pass through various processing operations, it becomes extremely important to accurately understand and subsequently describe their flow. This is done with the help of material and energy balance which are essentially based on the principles of mass and energy conservation. If the unit operation, whatever its nature is seen as a whole it may be represented diagrammatically as a box. The mass and energy going into the box must balance with the mass and energy coming out.</p>
+                            <p style="text-align:left; font-size:14px; font-weight:bold;">2.2 Material Balance</p>
+                            <p style="padding-bottom: 10px;">
+                                The law of conservation of mass leads to what is called a mass or a material balance.
+                                <br/>
+                                Mass In = Mass Out + Mass Stored Raw Materials = Products + Wastes + Stored Materials.
+                            </p>
+                            <p style="text-align:left; font-size:14px; font-weight:bold;">2.3 Energy Balance</p>
+                            <p style="padding-bottom: 10px;">
+                                Energy, just like mass, is conserved in the processing operations. The energy coming into a unit operation can be balanced with the energy coming out and the energy stored.
+                                <br/>
+                                Energy In = Energy Out + Energy Stored
+                            </p>
+                            <p style="text-align:left; font-size:14px; font-weight:bold;">2.4 Steady State</p>
+                            <p style="padding-bottom: 10px;">A situation in which all the state variables remain constant despite parallel processes trying to change them, is referred to as the steady state.</p>
+                            <p style="text-align:left; font-size:14px; font-weight:bold;">2.5 Time Constant</p>
+                            <p style="padding-bottom: 10px;">When we talk about time constant, it's essential to take into account the context in which we are talking about it. In our case, time constant can be defined as 63% of the time that will be taken for a body to reach steady state.</p>
+                            <p style="text-align:left; font-size:14px; font-weight:bold;">2.6 Setup</p> 
+                            <p style="padding-bottom: 10px;">Let's have a look at the setup we are going to use in our experiment.</p>
+                            <p style="text-align: center;"><img src="images/tank-heater-setup.jpg"></p>
+                            <p style="text-align:left; font-size:14px; font-weight:bold;">2.7 Assumptions</p>
+                            <p style="padding-bottom: 10px;">
+                            <ul>
+                                <li>The density of the coil as well as the tank's fluid material remains constant.</li>
+                                <li>The specific heat capacity of the coil as well as the tank's fluid material remains constant.</li>
+                                <li>The stirring is such that as soon as a drop of material enters the tank or the coil it has the same temperature as that of the rest of the bulk material.</li>
+                                <li>The fluid is incompressible.</li>
+                                <li>No accumulation occurs inside the tank or the coil, i.e., mass inflow is equal to the mass outflow.</li>
+                                <li>No radiation takes place</li>
+                                <li>There is only one state of a particular fluid present in the tank as well as the coil throughout the experiment, i.e., the state of the fluid dose not change during the experiment.</li>
+                            </ul>
+                            </p>
+                            <p style="text-align:left; font-size:14px; font-weight:bold;">2.8 Tank Analysis</p>
+                            <p style="padding-bottom: 10px;">
+                                Now, let's apply the concepts we learnt just now. We will consider the tank first. The fluid is entering it with a temperature and flow rate and leaving it with a temperature and flow rate . We assume that temperature inside the tank is uniform and is equal to the outlet temperature. We will assume this for the coil as well. Now, applying mass conservation 
+                                <br/>
+                                <b>Mass stored = Mass in - Mass out</b>
+                                <br/>
+                                <b>`(d(S d_t))/dt=V_i d_t - V_o d_t`</b>
+                                <br/>
+                                where S denotes the volume of the tank. Assuming that the tank volume stays the same and the density of the fluid is a constant, then 
+                                <br/>
+                                `(dS)/dt=0` 
+                                <br/>
+                                `V_i = V_o`
+                                <br/>
+                                Now, we will apply energy conservation<br/>
+                                <b>Energy In = Energy Stored + Energy Out </b><br/>
+                                In the case of the stirred tank heater<br/>
+                                <b>Energy in = Energy through inflow + Energy through heat transfer = `V_i d c_p(T_i - T_(gr)) + H` </b><br/>
+                                where,<br/>
+                                `T_(gr)` - Reference Temperature <br/>
+                                <b>H</b> - Rate of Heat Transfer into the tank <br/>
+                                `C_p` - Specific Heat Capacity <br/>
+                                <b>Energy stored = `(d(S d_t c_p(T_i - T_(gr))))/dt` </b><br/>
+                                <b>Energy Out = `V_o d_t c_p(T_o - T_(gr))`</b> <br/>
+                                Hence,<br/> 
+                                `V_i d c_p(T_i - T_(gr)) + H = d((S d_t c_p(T_i - T_(gr)))` <br/>
+                                `(S d_t c_p d(T_o - T_(gr)))/dt = V_o d_t C_p[(T_i - T_(gr))+(T_i - T_(gr))] + H` as `(V_i - V_o)` <br/>
+                                `(S d T_o)/d_t = V_o(T_i - T_o) + H/(d_t c_p)`
+                            </p>
 
-The typical block diagram of an ADC is shown in Fig. 1 below. <br />
-                            <div align="center">
-                            <img src="images/exp1.jpg" style="width:500px;height:400px;" /> 
-                            <br />
-                            Figure 1 (IC 74138)</div>
- 
+                            <p style="text-align:left; font-size:14px; font-weight:bold;">2.9 Coil Analysis</p>
+                            <p style="padding-bottom: 10px;">
+                                The fluid is entering the coil with a temperature `T_(i-coil)` and the flow rate `V_(i-coil)` and leaving it with the temperature `T_(i-coil)` and flow rate `V_(i-coil)`. `d_(coil)` is the density of fluid in the coil. We will now consider the coil and will repeat the same things which we did for the tank.<br/>
+                                Applying mass conservation, <br/>
+                                <b>Mass Stored = Mass In - Mass Out </b><br/>
+                                `(d(S_(coil) d_j))/dt = V_(i- coil) d_(coil) - V_(o - coil) d_(coil)` <br/>
+                                where S denotes the volume of the coil. Assuming that the coil volume stays the same and the density of the fluid is a constant, then <br/>
+                                `(d S_(coil))/dt = 0`<br/> 
+                                `V_(i-coil) = V_(o - coil)`<br/>
+                                As in the case of the tank<br/>
+                                <b>Energy In= Energy Store + Energy Out</b><br/>
+                                `V_(i-coil) d_(coil) c_(p-coil)(T_(i-coil)-T_(gr)) - H = (d(S_(coil) d_(coil) c_(p-coil)(T_(i-coil)-T_(gr))))/dt + V_(o-coil)d_(coil) c_(p-coil)(T_(o - coil)-T(gr))` <br/>
+                                `S_(coil) d_(coil) c_(p-coil)(d (T_(o - coil)-T(gr)))/dt = V_(o-coil)d_(coil) c_(p-coil)[(T_(i-coil)-T_(gr)) + (T_(o-coil) - T(gr))] + H` as `V_(i-coil) = V_(o-coil)` <br/>
+                                `S_(coil)(d(T_(o-coil)))/dt = V_(o-coil)(T_(i-coil) - T_(o-coil)) + H/(d_(coil) c_(p-coil))`<br/>
 
-The process of digitization consists of first sampling (digitization in time) and quantization (digitization in amplitude). In this experiment we will study and understand the principle of sampling, while the principle of quantization will be studied in the next experiment. The sampling process depicts an analog signal as a sequence of values. The basic sampling function can be carried out with an ideal 'sample-and-hold' circuit which maintains the sampled signal until next sample is taken. An ideal sampler can be considered as a switch that periodically opens and closes every T seconds. The sampling frequency (fs in Hertz) is thus defined as
+                                We can Replace the H in the equation with `UA(T_(o-coil) - T_o)` where U and A are the heat transfer coefficient and the area exposed to heat transfer .
+                                Finally we have to solve these two ordinary differential equation to get the steady state temperatures of the tank as well as the coil.
 
-fs=1T....(1)
-The sampled discrete time signal x(nT) , n=0,1,2,.... of the original continuous time signal x(t) is shown in Fig. 2 below.<br/>
-
-<div align="center">
-                            <img src="images/expt1Fig2.png" style="width:500px;height:400px;" /> 
-                            <br />
-                            Figure 2 (IC 74138)</div>
-                            
-In order to represent an analog signal x(t) by a discrete-time signal x(nT) accurately, so that the analog signal can be exactly reconstructed back from the discrete-time signal, the sampling frequency fs must be at least twice the maximum frequency component (fM) of the original analog signal. Thus we have,
-
-fs≥2fm....(2)
-The minimum sampling rate is called the Nyquist rate and the above Sampling Theorem is called the Shannon's Sampling Theorem. When an analog signal is sampled at fs , frequency components higher than fs/2 fold back into the frequency range [0, fs/2]. This folded frequency components overlap with the original frequency components in the same range and leads to an undesired effect known as aliasing. In this case, the original analog signal cannot be recovered from the sample data.
-
-Consider an analog signal of frequency 1Hz as shown in Fig. 3(a) below. The sampling frequency is 4Hz. The sampled signal is shown in Fig. 3(b), Note that an exact reconstruction of the missing samples is obtained so long as the Shannon's Sampling Theorem is satisfied. <br />
-
-<div align="center">
-                            <img src="images/abc1.jpg" style="width:500px;height:400px;" /> 
-                            <br />
-                            Figure 3 (IC 74138)</div>
-
-
-Now let's consider, the analog signal of frequency 5Hz as shown in Fig. 4(a) below. The sampling frequency is same as above, i.e. 4Hz. The sampled signal is shown in Fig. 4(b), Note that the reconstruction of the original analog signal is not possible since the sampling frequency does not satisfy Shannon's Sampling Theorem. In this case the reconstructed signal has a frequency of 1Hz. The signal of 5Hz is folded back as 1Hz, into the range determined by the sampling frequency leading to the problem of aliasing. <br/>
-
-
-<div align="center">
-                            <img src="images/abc2.png" style="width:500px;height:400px;" /> 
-                            <br />
-                            Figure 4 (IC 74138)</div>
-
-
-     
-</div>                           
-
+                            </p>
+                        </div>
 
  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-mml-chtml.js"></script>    
  

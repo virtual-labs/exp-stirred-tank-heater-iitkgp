@@ -2,12 +2,63 @@
   "version": 2.0,
   "questions": [
     {
-      "question": "Encoders are made by three",
+      "question": "When steady state reaches in the tank then?",
       "answers": {
-        "a": "AND gate",
-        "b": "OR gate",
-        "c": "NAND gate",
-        "d": "XOR gate"
+        "a": "The output velocity is always a constant",
+        "b": "The input velocity is always a constant",
+        "c": "The height of the fluid in the tank remains constant",
+        "d": "All of these"
+      },
+      "explanations": {
+        "a": "Explanation 1  <a href='www.google.com'>here</a>",
+        "b": "Explanation 2",
+        "c": "Explanation 2",
+        "d": "Explanation 2"
+      },
+      "correctAnswer": "c",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "An arrangement as in your experiment is at steady state, what will happen if you increase the output flow rate?",
+      "answers": {
+        "a": "The fluid level in tank decreases continuously",
+        "b": " The fluid level in tank decreases and then becomes constant",
+        "c": "The fluid level in tank increases continuously",
+        "d": "The fluid level in tank increases and then becomes constant"
+      },
+      "explanations": {
+        "a": "Explanation 1  <a href='www.google.com'>here</a>",
+        "b": "Explanation 2",
+        "c": "Explanation 2",
+        "d": "Explanation 2"
+      },
+      "correctAnswer": "a",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "An arrangement as in your experiment is at steady state, what will happen if you decrease the input flow rate?",
+      "answers": {
+        "a": "The fluid level in tank decreases continuously",
+        "b": "The fluid level in tank increases continuously",
+        "c": "The fluid level in tank decreases and then becomes constant",
+        "d": "The fluid level in tank increases and then becomes constant"
+      },
+      "explanations": {
+        "a": "Explanation 1  <a href='www.google.com'>here</a>",
+        "b": "Explanation 2",
+        "c": "Explanation 2",
+        "d": "Explanation 2"
+      },
+      "correctAnswer": "a",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "An arrangement as in your experiment is at steady state, what will happen if you increase the input first and then increase the output flow rate but by the same amount?",
+      "answers": {
+        "a": "The height first increases and then decreases and reaches to it's original value",
+        "b": "The height first increases and then becomes constant but is more than the previous steady state's value",
+        "c": "The height first decreases and then increases and reaches to it's original value",
+        "d": "The height first decreases and then becomes constant but is less than the previous steady states value"
       },
       "explanations": {
         "a": "Explanation 1  <a href='www.google.com'>here</a>",
@@ -19,12 +70,12 @@
       "difficulty": "beginner"
     },
     {
-      "question": "A circuit that converts n inputs to 2^n outputs is called",
+      "question": "The steady state value of the height obtained as done practically is different from that calculated from equations with certain assumptions because",
       "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+        "a": "The value of inflow is not exactly equal to the value of the outflow",
+        "b": "There are fluctuations in the value of the inflow",
+        "c": "There is a problem of meniscus of the fluid which leads to misjudgement of the value obtained",
+        "d": "All of the above"
       },
       "explanations": {
         "a": "Explanation 1  <a href='www.google.com'>here</a>",
@@ -32,8 +83,10 @@
         "c": "Explanation 2",
         "d": "Explanation 2"
       },
-      "correctAnswer": "c",
+      "correctAnswer": "d",
       "difficulty": "beginner"
-    }
+    }    
   ]
 }
+
+ 
