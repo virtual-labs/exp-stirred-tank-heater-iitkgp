@@ -51,72 +51,66 @@ When we talk about time constant, it's essential to take into account the contex
 2.6 Setup
 
 Let's have a look at the setup we are going to use in our experiment.
-                            <p style="text-align: center;"><img src="images/tank-heater-setup.jpg"></p>
-
-
-                            
-                            <p style="text-align:left; font-size:14px; font-weight:bold;">2.7 Assumptions</p>
-                            <p style="padding-bottom: 10px;">
-                            <ul>
-                                <li>The density of the coil as well as the tank's fluid material remains constant.</li>
-                                <li>The specific heat capacity of the coil as well as the tank's fluid material remains constant.</li>
-                                <li>The stirring is such that as soon as a drop of material enters the tank or the coil it has the same temperature as that of the rest of the bulk material.</li>
-                                <li>The fluid is incompressible.</li>
-                                <li>No accumulation occurs inside the tank or the coil, i.e., mass inflow is equal to the mass outflow.</li>
-                                <li>No radiation takes place</li>
-                                <li>There is only one state of a particular fluid present in the tank as well as the coil throughout the experiment, i.e., the state of the fluid dose not change during the experiment.</li>
-                            </ul>
-                            </p>
-                            <p style="text-align:left; font-size:14px; font-weight:bold;">2.8 Tank Analysis</p>
-                            <p style="padding-bottom: 10px;">
-                                Now, let's apply the concepts we learnt just now. We will consider the tank first. The fluid is entering it with a temperature and flow rate and leaving it with a temperature and flow rate . We assume that temperature inside the tank is uniform and is equal to the outlet temperature. We will assume this for the coil as well. Now, applying mass conservation 
-                                <br/>
-                                <b>Mass stored = Mass in - Mass out</b>
-                                <br/>
-                                <b>`(d(S d_t))/dt=V_i d_t - V_o d_t`</b>
-                                <br/>
-                                where S denotes the volume of the tank. Assuming that the tank volume stays the same and the density of the fluid is a constant, then 
-                                <br/>
-                                `(dS)/dt=0` 
-                                <br/>
-                                `V_i = V_o`
-                                <br/>
-                                Now, we will apply energy conservation<br/>
-                                <b>Energy In = Energy Stored + Energy Out </b><br/>
-                                In the case of the stirred tank heater<br/>
-                                <b>Energy in = Energy through inflow + Energy through heat transfer = `V_i d c_p(T_i - T_(gr)) + H` </b><br/>
-                                where,<br/>
-                                `T_(gr)` - Reference Temperature <br/>
-                                <b>H</b> - Rate of Heat Transfer into the tank <br/>
-                                `C_p` - Specific Heat Capacity <br/>
-                                <b>Energy stored = `(d(S d_t c_p(T_i - T_(gr))))/dt` </b><br/>
-                                <b>Energy Out = `V_o d_t c_p(T_o - T_(gr))`</b> <br/>
-                                Hence,<br/> 
-                                `V_i d c_p(T_i - T_(gr)) + H = d((S d_t c_p(T_i - T_(gr)))` <br/>
-                                `(S d_t c_p d(T_o - T_(gr)))/dt = V_o d_t C_p[(T_i - T_(gr))+(T_i - T_(gr))] + H` as `(V_i - V_o)` <br/>
-                                `(S d T_o)/d_t = V_o(T_i - T_o) + H/(d_t c_p)`
-                            </p>
-
-                            <p style="text-align:left; font-size:14px; font-weight:bold;">2.9 Coil Analysis</p>
-                            <p style="padding-bottom: 10px;">
-                                The fluid is entering the coil with a temperature `T_(i-coil)` and the flow rate `V_(i-coil)` and leaving it with the temperature `T_(i-coil)` and flow rate `V_(i-coil)`. `d_(coil)` is the density of fluid in the coil. We will now consider the coil and will repeat the same things which we did for the tank.<br/>
-                                Applying mass conservation, <br/>
-                                <b>Mass Stored = Mass In - Mass Out </b><br/>
-                                `(d(S_(coil) d_j))/dt = V_(i- coil) d_(coil) - V_(o - coil) d_(coil)` <br/>
-                                where S denotes the volume of the coil. Assuming that the coil volume stays the same and the density of the fluid is a constant, then <br/>
-                                `(d S_(coil))/dt = 0`<br/> 
-                                `V_(i-coil) = V_(o - coil)`<br/>
-                                As in the case of the tank<br/>
-                                <b>Energy In= Energy Store + Energy Out</b><br/>
-                                `V_(i-coil) d_(coil) c_(p-coil)(T_(i-coil)-T_(gr)) - H = (d(S_(coil) d_(coil) c_(p-coil)(T_(i-coil)-T_(gr))))/dt + V_(o-coil)d_(coil) c_(p-coil)(T_(o - coil)-T(gr))` <br/>
-                                `S_(coil) d_(coil) c_(p-coil)(d (T_(o - coil)-T(gr)))/dt = V_(o-coil)d_(coil) c_(p-coil)[(T_(i-coil)-T_(gr)) + (T_(o-coil) - T(gr))] + H` as `V_(i-coil) = V_(o-coil)` <br/>
-                                `S_(coil)(d(T_(o-coil)))/dt = V_(o-coil)(T_(i-coil) - T_(o-coil)) + H/(d_(coil) c_(p-coil))`<br/>
-
-                                We can Replace the H in the equation with `UA(T_(o-coil) - T_o)` where U and A are the heat transfer coefficient and the area exposed to heat transfer .
-                                Finally we have to solve these two ordinary differential equation to get the steady state temperatures of the tank as well as the coil.
-
-                            </p>
-                        </div>
+<p style="text-align: center;"><img src="images/tank-heater-setup.jpg"></p>
+<p style="text-align:left; font-size:14px; font-weight:bold;">2.7 Assumptions</p>
+<p style="padding-bottom: 10px;">
+<ul>
+ <li>The density of the coil as well as the tank's fluid material remains constant.</li>
+<li>The specific heat capacity of the coil as well as the tank's fluid material remains constant.</li>
+<li>The stirring is such that as soon as a drop of material enters the tank or the coil it has the same temperature as that of the rest of the bulk material.</li>
+<li>The fluid is incompressible.</li>
+<li>No accumulation occurs inside the tank or the coil, i.e., mass inflow is equal to the mass outflow.</li>
+<li>No radiation takes place</li>
+<li>There is only one state of a particular fluid present in the tank as well as the coil throughout the experiment, i.e., the state of the fluid dose not change during the experiment.</li>
+</ul>
+</p>
+<p style="text-align:left; font-size:14px; font-weight:bold;">2.8 Tank Analysis</p>
+<p style="padding-bottom: 10px;">
+Now, let's apply the concepts we learnt just now. We will consider the tank first. The fluid is entering it with a temperature and flow rate and leaving it with a temperature and flow rate . We assume that temperature inside the tank is uniform and is equal to the outlet temperature. We will assume this for the coil as well. Now, applying mass conservation 
+ <br/>
+<b>Mass stored = Mass in - Mass out</b>
+<br/>
+<b>`(d(S d_t))/dt=V_i d_t - V_o d_t`</b>
+<br/>
+where S denotes the volume of the tank. Assuming that the tank volume stays the same and the density of the fluid is a constant, then 
+<br/>
+ `(dS)/dt=0` 
+<br/>
+`V_i = V_o`
+<br/>
+Now, we will apply energy conservation<br/>
+<b>Energy In = Energy Stored + Energy Out </b><br/>
+In the case of the stirred tank heater<br/>
+<b>Energy in = Energy through inflow + Energy through heat transfer = `V_i d c_p(T_i - T_(gr)) + H` </b><br/>
+ where,<br/>
+`T_(gr)` - Reference Temperature <br/>
+ <b>H</b> - Rate of Heat Transfer into the tank <br/>
+ `C_p` - Specific Heat Capacity <br/>
+ <b>Energy stored = `(d(S d_t c_p(T_i - T_(gr))))/dt` </b><br/>
+ <b>Energy Out = `V_o d_t c_p(T_o - T_(gr))`</b> <br/>
+  Hence,<br/> 
+`V_i d c_p(T_i - T_(gr)) + H = d((S d_t c_p(T_i - T_(gr)))` <br/>
+`(S d_t c_p d(T_o - T_(gr)))/dt = V_o d_t C_p[(T_i - T_(gr))+(T_i - T_(gr))] + H` as `(V_i - V_o)` <br/>
+ `(S d T_o)/d_t = V_o(T_i - T_o) + H/(d_t c_p)`
+</p>
+<p style="text-align:left; font-size:14px; font-weight:bold;">2.9 Coil Analysis</p>
+ <p style="padding-bottom: 10px;">
+The fluid is entering the coil with a temperature `T_(i-coil)` and the flow rate `V_(i-coil)` and leaving it with the temperature `T_(i-coil)` and flow rate `V_(i-coil)`. `d_(coil)` is the density of fluid in the coil. We will now consider the coil and will repeat the same things which we did for the tank.<br/>
+Applying mass conservation, <br/>
+<b>Mass Stored = Mass In - Mass Out </b><br/>
+`(d(S_(coil) d_j))/dt = V_(i- coil) d_(coil) - V_(o - coil) d_(coil)` <br/>
+where S denotes the volume of the coil. Assuming that the coil volume stays the same and the density of the fluid is a constant, then <br/>
+`(d S_(coil))/dt = 0`<br/> 
+`V_(i-coil) = V_(o - coil)`<br/>
+As in the case of the tank<br/>
+<b>Energy In= Energy Store + Energy Out</b><br/>
+`V_(i-coil) d_(coil) c_(p-coil)(T_(i-coil)-T_(gr)) - H = (d(S_(coil) d_(coil) c_(p-coil)(T_(i-coil)-T_(gr))))/dt + V_(o-coil)d_(coil) c_(p-coil)(T_(o - coil)-T(gr))` <br/>
+`S_(coil) d_(coil) c_(p-coil)(d (T_(o - coil)-T(gr)))/dt = V_(o-coil)d_(coil) c_(p-coil)[(T_(i-coil)-T_(gr)) + (T_(o-coil) - T(gr))] + H` as `V_(i-coil) = V_(o-coil)` <br/>
+`S_(coil)(d(T_(o-coil)))/dt = V_(o-coil)(T_(i-coil) - T_(o-coil)) + H/(d_(coil) c_(p-coil))`<br/>
+ We can Replace the H in the equation with `UA(T_(o-coil) - T_o)` where U and A are the heat transfer coefficient and the area exposed to heat transfer .
+ Finally we have to solve these two ordinary differential equation to get the steady state temperatures of the tank as well as the coil.
+</p>
+</div>
 
  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-mml-chtml.js"></script>    
  
