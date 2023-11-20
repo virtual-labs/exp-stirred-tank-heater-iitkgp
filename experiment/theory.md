@@ -13,7 +13,8 @@
                            
 Conduction can be understood as a process in which energy transfer occurs from a more energetic body to a less energetic process primarily due to collisions between them. Conduction takes only when there is a temperature difference between two parts of the conducting medium. Let's explore the dependence of the conduction rate with change in temperature. Consider a thin plate of thickness Δx and cross sectional area A. Let the temperature of thickness at one face be and at the opposite face be . It has been experimentally found that heat flow will take place between the two faces. If the time interval is ΔT and the heat flow ΔQ, then it has been found that
                             
- `(Delta Q)/(Delta T)=k(Delta T)/(Delta x)`</p>
+$$\frac{\Delta Q}{\Delta T}=k\frac{\Delta T}{\Delta x}$$
+
 <p style="text-align:left; font-size:14px; font-weight:bold;">1.2 Convection</p>
 
  Unlike conduction, convection involves bulk transport of fluids from one place to another which consequently results in exchange of heat from the hotter to colder substance. In brief, the heat energy transferred due to movement of a heated substance is convection. Land and sea breezes are a good example of the phenomenon of convection. During the night, the land cools faster due to poor conductivity of land. This leads to differential heating of the air above land and water. The air above seas is hotter. Since hot air is lighter, it rises up resulting in cool breezes from the land blowing in above seas and the hot air being transported to land resulting in warm night breezes. The reverse process is repeated during the day. This entire phenomenon is based on convection currents and is an example of natural convection. Natural convection is essentially due to the difference in the densities of the fluids which results in their subsequent motion. When fluids are made to move due to some external forces such as a fan or a blower as the case maybe, then it's called forced convection.
@@ -69,44 +70,67 @@ Let's have a look at the setup we are going to use in our experiment.
 Now, let's apply the concepts we learnt just now. We will consider the tank first. The fluid is entering it with a temperature and flow rate and leaving it with a temperature and flow rate . We assume that temperature inside the tank is uniform and is equal to the outlet temperature. We will assume this for the coil as well. Now, applying mass conservation 
  <br/>
 <b>Mass stored = Mass in - Mass out</b>
-<br/>
-<b>`(d(S d_t))/dt=V_i d_t - V_o d_t`</b>
-<br/>
+
+  
+$$\frac {d(S d_t)}{dt}=V_i d_t - V_o d_t$$
+
+
 where S denotes the volume of the tank. Assuming that the tank volume stays the same and the density of the fluid is a constant, then 
-<br/>
- `(dS)/dt=0` 
-<br/>
-`V_i = V_o`
-<br/>
+
+ $$\frac{dS}{dt}=0$$ 
+
+$$V_i = V_o$$
+
 Now, we will apply energy conservation<br/>
 <b>Energy In = Energy Stored + Energy Out </b><br/>
 In the case of the stirred tank heater<br/>
-<b>Energy in = Energy through inflow + Energy through heat transfer = `V_i d c_p(T_i - T_(gr)) + H` </b><br/>
- where,<br/>
-`T_(gr)` - Reference Temperature <br/>
+Energy in = Energy through inflow + Energy through heat transfer =
+
+$$V_i d c_p(T_i - T_{gr}) + H$$ 
+
+ where,
+ 
+$$T_{gr} \ - \ Reference \ Temperature $$
+
  <b>H</b> - Rate of Heat Transfer into the tank <br/>
- `C_p` - Specific Heat Capacity <br/>
- <b>Energy stored = `(d(S d_t c_p(T_i - T_(gr))))/dt` </b><br/>
- <b>Energy Out = `V_o d_t c_p(T_o - T_(gr))`</b> <br/>
+ 
+ $$C_p \ - \ Specific \ Heat \ Capacity $$
+ 
+$$ Energy \ stored \ = \frac{d(S d_t c_p(T_i - T_{gr})}{dt}$$
+
+$$Energy \ Out = V_o d_t c_p(T_o - T_{gr})$$
+
   Hence,<br/> 
-`V_i d c_p(T_i - T_(gr)) + H = d((S d_t c_p(T_i - T_(gr)))` <br/>
-`(S d_t c_p d(T_o - T_(gr)))/dt = V_o d_t C_p[(T_i - T_(gr))+(T_i - T_(gr))] + H` as `(V_i - V_o)` <br/>
- `(S d T_o)/d_t = V_o(T_i - T_o) + H/(d_t c_p)`
+  
+$$V_i d c_p(T_i - T_{gr}) + H = d((S d_t c_p(T_i - T_{gr}))$$
+
+$$\frac{S d_t c_p d(T_o - T_{gr})}{dt} = V_o d_t C_p[(T_i - T_{gr})+(T_i - T_{gr})] + H \ as \ (V_i - V_o)$$
+
+$$\frac{S d T_o}{d_t} = V_o(T_i - T_o) + \frac{H}{d_t c_p}$$
+
 </p>
 <p style="text-align:left; font-size:14px; font-weight:bold;">2.9 Coil Analysis</p>
  <p style="padding-bottom: 10px;">
 The fluid is entering the coil with a temperature `T_(i-coil)` and the flow rate `V_(i-coil)` and leaving it with the temperature `T_(i-coil)` and flow rate `V_(i-coil)`. `d_(coil)` is the density of fluid in the coil. We will now consider the coil and will repeat the same things which we did for the tank.<br/>
 Applying mass conservation, <br/>
-<b>Mass Stored = Mass In - Mass Out </b><br/>
-`(d(S_(coil) d_j))/dt = V_(i- coil) d_(coil) - V_(o - coil) d_(coil)` <br/>
+Mass Stored = Mass In - Mass Out
+$$\frac{d(S_{coil} d_j)}{dt} = V_{i- coil} d_{coil} - V_{o - coil} d_{coil}$$
+
 where S denotes the volume of the coil. Assuming that the coil volume stays the same and the density of the fluid is a constant, then <br/>
-`(d S_(coil))/dt = 0`<br/> 
-`V_(i-coil) = V_(o - coil)`<br/>
+
+$$\frac{d S_{coil}}{dt} = 0$$
+   
+$$V_{i-coil} = V_{o - coil}$$
+
 As in the case of the tank<br/>
 <b>Energy In= Energy Store + Energy Out</b><br/>
-`V_(i-coil) d_(coil) c_(p-coil)(T_(i-coil)-T_(gr)) - H = (d(S_(coil) d_(coil) c_(p-coil)(T_(i-coil)-T_(gr))))/dt + V_(o-coil)d_(coil) c_(p-coil)(T_(o - coil)-T(gr))` <br/>
-`S_(coil) d_(coil) c_(p-coil)(d (T_(o - coil)-T(gr)))/dt = V_(o-coil)d_(coil) c_(p-coil)[(T_(i-coil)-T_(gr)) + (T_(o-coil) - T(gr))] + H` as `V_(i-coil) = V_(o-coil)` <br/>
-`S_(coil)(d(T_(o-coil)))/dt = V_(o-coil)(T_(i-coil) - T_(o-coil)) + H/(d_(coil) c_(p-coil))`<br/>
+
+$$V_{i-coil} d_{coil} c_{p-coil}(T_{i-coil}-T_{gr}) - H = \frac{d(S_{coil} d_{coil} c_{p-coil}(T_{i-coil}-T_{gr}))}{dt} + V_{o-coil}d_{coil} c_{p-coil}(T_{o - coil}-T(gr))$$
+
+$$S_{coil} d_{coil} c_{p-coil} \frac{d (T_{o - coil}-T(gr))}{dt} = V_{o-coil}d_{coil} c_{p-coil}[(T_{i-coil}-T_{gr}) + (T_{o-coil} - T(gr))] + H \ as \ V_{i-coil} = V_{o-coil}$$
+
+$$S_{coil} \frac{d(T_{o-coil})}{dt} = V_{o-coil}(T_{i-coil} - T_{o-coil}) + \frac{H}{d_{coil} c_{p-coil}}$$
+
  We can Replace the H in the equation with `UA(T_(o-coil) - T_o)` where U and A are the heat transfer coefficient and the area exposed to heat transfer .
  Finally we have to solve these two ordinary differential equation to get the steady state temperatures of the tank as well as the coil.
 </p>
