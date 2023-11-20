@@ -114,7 +114,7 @@ $$\frac{S d T_o}{d_t} = V_o(T_i - T_o) + \frac{H}{d_t c_p}$$
 The fluid is entering the coil with a temperature `T_(i-coil)` and the flow rate `V_(i-coil)` and leaving it with the temperature `T_(i-coil)` and flow rate `V_(i-coil)`. `d_(coil)` is the density of fluid in the coil. We will now consider the coil and will repeat the same things which we did for the tank.<br/>
 Applying mass conservation, <br/>
 Mass Stored = Mass In - Mass Out
-$$\frac{d(S_{coil} d_j)}{{dt} = V_(i- coil) d_{coil} - V_(o - coil) d_{coil}$$
+$$\frac{d(S_{coil} d_j)}{dt} = V_{i- coil} d_{coil} - V_{o - coil} d_{coil}$$
 
 where S denotes the volume of the coil. Assuming that the coil volume stays the same and the density of the fluid is a constant, then <br/>
 
@@ -129,7 +129,7 @@ $$V_{i-coil} d_{coil} c_{p-coil}(T_{i-coil}-T_{gr}) - H = \frac{d(S_{coil} d_{co
 
 $$S_{coil} d_{coil} c_{p-coil} \frac{d (T_{o - coil}-T(gr))}{dt} = V_{o-coil}d_{coil} c_{p-coil}[(T_{i-coil}-T_{gr}) + (T_{o-coil} - T(gr))] + H \ as \ V_{i-coil} = V_{o-coil}$$
 
-$$S_{coil} \frac{(d(T_{o-coil}){{dt} = V_{o-coil}(T_{i-coil} - T_{o-coil}) + \frac{H}{d_{coil} c_{p-coil}}$$
+$$S_{coil} \frac{d(T_{o-coil})}{dt} = V_{o-coil}(T_{i-coil} - T_{o-coil}) + \frac{H}{d_{coil} c_{p-coil}}$$
 
  We can Replace the H in the equation with `UA(T_(o-coil) - T_o)` where U and A are the heat transfer coefficient and the area exposed to heat transfer .
  Finally we have to solve these two ordinary differential equation to get the steady state temperatures of the tank as well as the coil.
