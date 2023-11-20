@@ -131,7 +131,7 @@ $$S_{coil} d_{coil} c_{p-coil} \frac{d (T_{o - coil}-T(gr))}{dt} = V_{o-coil}d_{
 
 $$S_{coil} \frac{d(T_{o-coil})}{dt} = V_{o-coil}(T_{i-coil} - T_{o-coil}) + \frac{H}{d_{coil} c_{p-coil}}$$
 
- We can Replace the H in the equation with `UA(T_(o-coil) - T_o)` where U and A are the heat transfer coefficient and the area exposed to heat transfer .
+ We can Replace the H in the equation with UA(T_(o-coil) - T_o) where U and A are the heat transfer coefficient and the area exposed to heat transfer .
  Finally we have to solve these two ordinary differential equation to get the steady state temperatures of the tank as well as the coil.
 </p>
 </div>
