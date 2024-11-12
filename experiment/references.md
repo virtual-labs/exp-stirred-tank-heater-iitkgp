@@ -6,5 +6,5 @@
 -William L.Luyben, Process Modeling Simulation and Control For Chemical Engineers, McGraw-Hill International Editions (1990).
 
 #### Video Lectures
-- [Digital Signal Processing Introduction](https://nptel.ac.in/)
+- [Chemical Engineering - Process Control and Instrumentation](https://archive.nptel.ac.in/courses/103/103/103103037/)
 
