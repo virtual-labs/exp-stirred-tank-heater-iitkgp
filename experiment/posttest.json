@@ -2,12 +2,12 @@
   "version": 2.0,
   "questions": [
     {
-      "question": "This is a Sample Question 1?",
+      "question": "The work of a rotameter is to measure the",
       "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+        "a": "Volumetric flow rate",
+        "b": "Mass flow rate",
+        "c": "Velocity",
+        "d": "None of these"
       },
       "explanations": {
         "a": "Explanation 1  <a href='www.google.com'>here</a>",
@@ -19,12 +19,12 @@
       "difficulty": "beginner"
     },
     {
-      "question": "This is a Sample Question 2?",
+      "question": "The use of a thermocouple is to",
       "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+        "a": "Measure absolute temperature",
+        "b": "Measure velocity at a particular point",
+        "c": "Measure temperature difference",
+        "d": "Measure average velocity at a particular plane"
       },
       "explanations": {
         "a": "Explanation 1  <a href='www.google.com'>here</a>",
@@ -33,6 +33,74 @@
         "d": "Explanation 2"
       },
       "correctAnswer": "c",
+      "difficulty": "beginner"
+    },
+    {
+      "question": " At steady tank and coil arrangement as in the experiment, if the coil inlet temperature is increased then the tank outlet temperature:",
+      "answers": {
+        "a": "Increases continuously",
+        "b": "Increases and then becomes constant above the previous steady state value",
+        "c": "Decreases continuously below the previous steady state value",
+        "d": " Decreases and then becomes a constant below the previous steady state value"
+      },
+      "explanations": {
+        "a": "Explanation 1  <a href='www.google.com'>here</a>",
+        "b": "Explanation 2",
+        "c": "Explanation 2",
+        "d": "Explanation 2"
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "Which type of reactor, aeration is generally accomplished in a separate vessel?",
+      "answers": {
+        "a": "Fluidised bed",
+        "b": "Trickle bed",
+        "c": "Packed bed",
+        "d": "Stirred and air-driven reactors"
+      },
+      "explanations": {
+        "a": "Explanation 1  <a href='www.google.com'>here</a>",
+        "b": "Explanation 2",
+        "c": "Explanation 2",
+        "d": "Explanation 2"
+      },
+      "correctAnswer": "c",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "What is the unit of influent flow rate?",
+      "answers": {
+        "a": "m d",
+        "b": "m/d",
+        "c": "m2/d",
+        "d": "m3/d"
+      },
+      "explanations": {
+        "a": "Explanation 1  <a href='www.google.com'>here</a>",
+        "b": "Explanation 2",
+        "c": "Explanation 2",
+        "d": "Explanation 2"
+      },
+      "correctAnswer": "d",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "The reverse of Hydraulic Retention Time [HRT] is the ________",
+      "answers": {
+        "a": "Sedimentation rate",
+        "b": "Dilution rate",
+        "c": "Filtration rate",
+        "d": "Chemical rate"
+      },
+      "explanations": {
+        "a": "Explanation 1  <a href='www.google.com'>here</a>",
+        "b": "Explanation 2",
+        "c": "Explanation 2",
+        "d": "Explanation 2"
+      },
+      "correctAnswer": "b",
       "difficulty": "beginner"
     }
   ]
